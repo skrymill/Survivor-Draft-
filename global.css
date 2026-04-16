@@ -44,7 +44,7 @@ background {color: #0D0D0D; }
 /*headers*/
 
 header h1, h2, h3, h4, h5, h6 { font-family: 'survivant.regular', verdana, sans-serif; 
-	height: 20px;
+	height: 10px;
 	margin-bottom: 20px; }
 
 header { height: 150px;
@@ -58,7 +58,7 @@ header h1, header p {text-indent: -99999999999999px; }
 h1 {text-indent: -99999999999999px; }
 
 h2 { text-align: center; 
-	padding-top: 10px }
+	padding-top: 0 px; }
 
 
 
@@ -179,7 +179,7 @@ details[open] summary { border-bottom: 1px solid white;
 			margin-bottom: 1px; }
 	
 .picks {list-style-type: none;}
-
+		
 
 
 
