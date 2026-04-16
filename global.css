@@ -15,12 +15,16 @@ div#wrapper {width: 728px;
 	font-style: normal; }
 
 body { font-family: verdana, arial, sans-serif; 
-	font-size: 12px;
+	font-size: 14px;
 	line-height: 1.5;
 	margin: 0;
 	padding: 0;
 	color: #FFFFFF; 
-	background: #0D0D0D; }
+	background: black url(images/torch2.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: left bottom; }
+
 
 a {color: #FFF12E; 
 	font-weight: bold;
@@ -30,10 +34,12 @@ a:visited {color: #3D4ACC; }
 a:hover, a:focus, a:active {background-color: #fff5e8;
 				color: #800080;}
 
-/*colours*/
+
+/*background*/
 
 
 background {color: #0D0D0D; }
+
 
 /*headers*/
 
@@ -49,13 +55,14 @@ header { height: 150px;
 
 header h1, header p {text-indent: -99999999999999px; }
 
+h1 {text-indent: -99999999999999px; }
 
 h2 { text-align: center; 
 	padding-top: 10px }
 
 
 
-/*styling buttons*/
+/*styling buttons on homepage*/
 .buttons { padding: 10px; }
 
 /*styling nav bar */
@@ -66,7 +73,8 @@ nav ul { list-style-type: none;
 	overflow: hidden;
 	background-color: #6e6e6e;
 	display: flex;
-	justify-content: center; }
+	justify-content: center; 
+	font-size: 110%; }
 
 .nav li { float: left; }
 
@@ -89,22 +97,39 @@ nav ul { list-style-type: none;
 
 /*tables*/
 
-table {  width: 90%;
+.contestants {  width: 90%;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
   margin-top: 10px;
-  border: none; } 
+  border: none ; } 
 
-.points { border: 1px solid white; }
+
+	/*styling contestant images*/
+
+	.contestants img { border: 2px solid #3B3B3B;  }
+
+/*styling points table*/
+
+.totals {  width: 50%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  border: 1px solid white;
+  background-color: #525150; }
+
+.totals tr:hover { background-color: #D48911;  }
+
+.totals th, .totals td {border: 1px solid white; }
 
 th, td {padding: 5px; }
 
-table, th, td { border: 1px solid white; }
 
-.name { color: white;
-	background-color: #979695;
-	text-align: left; }
+
+/*.name { color: white;
+	background-color: #525150;
+	text-align: left;}*/
 
 caption { font-family: 'survivant.regular';  
 	font-weight: bold;
@@ -121,8 +146,9 @@ caption { font-family: 'survivant.regular';
 	margin-top: 1px;
 	margin-bottom: 1px; }
 
+/*rules text formatting*/
 
-
+.rules article {background: rgba(38, 38, 38, 0.5); }
 
 /*footer*/
 
@@ -133,17 +159,26 @@ footer { clear:both;
 	height: 1%; }
 
 
+/*styling collapsible buttons*/
 
 
+details {border: 1px solid grey;
+	border-radius: 5px;
+	padding: 1px 1px 1px; 
+	background-color: #525150;
+	cursor: pointer;
+	margin-bottom: 2px; }
 
+summary { font-weight: bold;
+	margin: 1px 1px 0;
+	padding: 1px; }
 
+details[open] { padding: 1px; }
 
-
-
-
-
-
-
+details[open] summary { border-bottom: 1px solid white;
+			margin-bottom: 1px; }
+	
+.picks {list-style-type: none;}
 
 
 
